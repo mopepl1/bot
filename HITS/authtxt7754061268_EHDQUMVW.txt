@@ -1,0 +1,26 @@
+4000223019337005|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019333426|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019337153|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019333384|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019338276|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019337872|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019331651|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019331669|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019335256|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019333079|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019335876|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019332873|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019332154|01|2028|000
+- Response: Your booking is now confirmed ✅

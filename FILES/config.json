@@ -1,0 +1,11 @@
+{
+    "API_ID"       :  "23404078",
+    "API_HASH"     :  "6f05053d7edb7a3aa89049bd934922d1",
+    "PHONE_NUMBER" :  "+16613362211",
+    "BOT_TOKEN"    :  "8494708391:AAH6lK7QSzpvk6BoyIV4zp_yICeIf_Am60Y0",
+    "DEBUG_BOT"    :  "8494708391:AAH6lK7QSzpvk6BoyIV4zp_yICeIf_Am60Y",
+    "OWNER_ID"     : ["8494708391", "5692411527"],
+    "LOGS_CHAT"    :  "-1002933775039",
+    "THREADS"      :   15,
+    "BOT_BY"       :  "Bot - <a href=\"tg://user?id=7849826660\">Angel</a>"
+}

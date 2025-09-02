@@ -1,0 +1,14 @@
+5343480374638996|05|2029|360
+- Response: order is confirmed 🔥
+4737029198968936|08|2028|166
+- Response: Your card's security code is incorrect
+4400661507653134|09|2028|396
+- Response: Your card's security code is incorrect
+4430450011246039|03|2027|096
+- Response: order is confirmed 🔥
+4060320366672351|11|2027|251
+- Response: Your card's security code is incorrect
+5188999110120074|06|2025|319
+- Response: CVV MATCH - 3ds cc
+4430410027890501|10|2027|656
+- Response: order is confirmed 🔥

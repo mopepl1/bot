@@ -1,0 +1,4 @@
+4024645596961454|03|2026|000
+- Response: Your booking is now confirmed ✅
+4024645596965711|03|2026|000
+- Response: Your card's security code is incorrect ❎

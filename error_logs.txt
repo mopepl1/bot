@@ -1,0 +1,902 @@
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 144, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 144, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 144, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 144, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 144, in cmd_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 14, in check_all_thing
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 14, in check_all_thing
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/info.py", line 9, in cmd_info
+    regdata = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.USERSDB], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.USERSDB]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/add.py", line 25, in cmd_add
+    getchat = await getchatinfo(chat_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 78, in getchatinfo
+    return chats_auth.find_one({"id": chat_id}, {"_id": 0})
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/stats.py", line 33, in stats
+    for item in get_all_chats:
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH]', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/stats.py", line 33, in stats
+    for item in get_all_chats:
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+    return self.next()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+    if len(self._data) or self._refresh():
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+    self._send_message(q)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+    response = client._run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+    return self._retryable_read(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+    return self._retry_internal(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+    ).run()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+    return self._read() if self._is_read else self._write()
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 2906, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/mongo_client.py", line 1923, in _cmd
+    return server.run_operation(
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/root/venv/lib/python3.10/site-packages/pymongo/synchronous/server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+  File "/root/venv/lib/python3.10/site-packages/pymongo/helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH], full error: {'ok': 0, 'errmsg': 'user is not allowed to do action [find] on [XCC_DATABASE.CHATS_AUTH]', 'code': 8000, 'codeName': 'AtlasError'}
+

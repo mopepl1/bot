@@ -1,0 +1,11 @@
+// {
+//     "API_ID"       :  "26461528",
+//     "API_HASH"     :  "d32f816a112f8e337cb7c34cadb5141a",
+//     "PHONE_NUMBER" :  "+1 254 367 3187",
+//     "BOT_TOKEN"    :  "7160813838:AAELnpXs1EJIs2SdXgLb9h5TASKe_wf0zMs",
+//     "DEBUG_BOT"    :  "7160813838:AAELnpXs1EJIs2SdXgLb9h5TASKe_wf0zMs",
+//     "OWNER_ID"     : ["1576069884", "1576069884"],
+//     "LOGS_CHAT"    :  "-4686756542",
+//     "THREADS"      :   15,
+//     "BOT_BY"       :  "Bot - <a href=\"tg://user?id=7849826660\">Angel</a>"
+// }

@@ -1,0 +1,4 @@
+370310025136958|11|2029|0000
+- Response: Your card's security code is incorrect
+4419200964817012|05|2028|744
+- Response: CVV MATCH - 3ds cc

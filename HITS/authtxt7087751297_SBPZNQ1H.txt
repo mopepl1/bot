@@ -1,0 +1,6 @@
+4000223019331651|01|2028|000
+- Response: Your booking is now confirmed ✅
+4000223019336296|01|2028|000
+- Response: Your card's security code is incorrect ❎
+4000223019333988|01|2028|000
+- Response: Your booking is now confirmed ✅

@@ -1,0 +1,6 @@
+4027665834450497|02|2032|776
+Result - Charged 1$ 🔥
+4027665834448095|04|2026|666
+Result - Card Doesn't Support Purchase ❎
+4027665834448095|05|2028|828
+Result - Card Doesn't Support Purchase ❎

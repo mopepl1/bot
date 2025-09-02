@@ -1,0 +1,10 @@
+4000223062301379|03|2028|271
+- Response: CVV MATCH - 3ds cc
+4000222810153454|05|2027|116
+- Response: CVV MATCH - 3ds cc
+4349750010547091|01|2026|342
+- Response: CVV MATCH - 3ds cc
+4772890012925147|11|2028|762
+- Response: Your card's security code is incorrect
+4697160008536122|01|2026|311
+- Response: CVV MATCH - 3ds cc
